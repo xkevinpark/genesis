@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "noEmit": true,
+    "target": "es6",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@Navigation/*": ["src/navigation/*"],
+      "@Components/*": ["src/components/*"],
+      "@Screens/*": ["src/screens/*"],
+      "@Assets/*": ["src/assets/*"],
+      "@Utils/*": ["src/utils/*"],
+    }
+  },
+  "exclude": ["node_modules"],
+  "extends": "./node_modules/@tsconfig/react-native/tsconfig.json",
+}
